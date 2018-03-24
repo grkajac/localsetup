@@ -1,0 +1,69 @@
+
+Post installation programs
+
+01. oracle JDK
+02. oracle SQLDeveloper
+03. docker
+04. oracle virtualbox
+05. maven
+06. git 
+07. nvm & node
+08. vagrant
+--
+1. zip unzip
+2. htop
+3. iotop
+4. inxi
+5. iftop
+
+3. nethogs
+4. whois
+5. wget
+6. traceroute
+7. tcpdump
+8. sshpass
+9. nmap
+10. nc
+11. curl
+
+6. meld diff viewer
+7. tree
+8. vim configs
+9. tmux
+
+--
+1. webstorm
+2. intellij
+3. eclipse
+4. visual code
+5. smartgit
+--
+# remote
+1. 2X Client
+2. remmina
+3. xvnc4viewer
+4. pptp-linux - ptp tunneling protocol client
+5. ppp - point-to-point protocol
+
+# internet
+1. deluge
+2. chrome
+3. firefox
+4.  
+--
+
+# communications
+1. viber
+2. skype
+
+# files
+1. dropbox
+
+# windows 
+1. wine
+
+# music & video
+1. audacious
+2. VLC
+3. SMPlayer
+4. sound converter
