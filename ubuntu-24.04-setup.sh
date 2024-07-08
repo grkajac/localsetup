@@ -36,19 +36,26 @@ sudo apt install golang-go -y
 # sudo usermod -aG docker ${USER}
 # su - ${USER}
 
-### install Docker via snap ###
-sudo snap install docker
+### install Docker via snap ### MORE PROBLEMS WITH SANDBOX DOCKER
+# sudo snap install docker
+# sudo addgroup --system docker
+# sudo usermod -aG docker ${USER}
+# sudo newgrp docker
+# sudo snap disable docker
+# sudo snap enable docker
+# sudo -sf /snap/docker/current/bin/docker /usr/local/bin/docker
+
+### install Docker via script ###
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh test-docker.sh
 sudo addgroup --system docker
 sudo usermod -aG docker ${USER}
 sudo newgrp docker
-sudo snap disable docker
-sudo snap enable docker
-sudo -sf /snap/docker/current/bin/docker /usr/local/bin/docker
 
 ### install kubernetes from K8s repo ###
 sudo apt update && sudo apt install -y apt-transport-https;
 # curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -;
-# echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list;
+# echo "deb https://apt.kubernetes.io/ kubernetes-$(lsb_release -cs) main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list;
 # sudo apt update;
 # sudo apt install -y kubectl kubectx;
 sudo snap install kubectl --classic
