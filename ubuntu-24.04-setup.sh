@@ -43,6 +43,7 @@ sudo usermod -aG docker ${USER}
 sudo newgrp docker
 sudo snap disable docker
 sudo snap enable docker
+sudo -sf /snap/docker/current/bin/docker /usr/local/bin/docker
 
 ### install kubernetes from K8s repo ###
 sudo apt update && sudo apt install -y apt-transport-https;
@@ -171,7 +172,9 @@ sudo ssh-keygen -t rsa -b 4098
 
 ### installing gnome extensions ###
 # https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator
-# install Vitals, clipboard manager ... TODO
+# install Vitals, pano clipboard manager ... TODO
+# sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0
+# gnome-extensions
 
 ### backup .zshrc file ###
 cp ~/.zshrc ~/.zshrc.backup
