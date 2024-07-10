@@ -129,6 +129,7 @@ brew install derailed/k9s/k9s
 brew install lazydocker
 brew install kind
 brew install fzf
+brew install grpcurl
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
 source ~/.zshrc
