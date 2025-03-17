@@ -25,6 +25,9 @@ sdk install leiningen 2.11.2
 ### install golang ###
 sudo apt install golang-go -y
 
+### install nvm ###
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
+
 
 # install docker from Docker repo
 # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
