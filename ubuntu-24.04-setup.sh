@@ -13,14 +13,14 @@ cp .gitconfig ~/.gitconfig
 curl -s "https://get.sdkman.io" | bash
 [[ -s "{$HOME}/.sdkman/bin/sdkman-init.sh" ]] && source "{$HOME}/.sdkman/bin/sdkman-init.sh"
 
-sdk install java 17.0.11-tem
+sdk install java 17.0.14-tem
 sdk install java 22.0.1-tem
 sdk install gradle 8.8
 sdk install maven 3.9.8
 sdk install groovy 4.0.22
 sdk install kotlin 2.0.0
 sdk install visualvm 2.1.8
-sdk install leiningen 2.11.2
+# sdk install leiningen 2.11.2
 
 ### install golang ###
 sudo apt install golang-go -y
@@ -153,10 +153,10 @@ pip install paramiko ansible wheel powerline-status
 ### install jetbreans toolbox ###
 sudo apt install libfuse2
 cd /opt/
-sudo wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.3.2.31487.tar.gz
-sudo tar -xvzf jetbrains-toolbox-2.3.2.31487.tar.gz
-sudo mv jetbrains-toolbox-2.3.2.31487.tar.gz jetbrains-toolbox
-sudo rm jetbrains-toolbox-2.3.2.31487.tar.gz
+sudo wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.5.4.38621.tar.gz
+sudo tar -xvzf jetbrains-toolbox-2.5.4.38621.tar.gz
+sudo mv jetbrains-toolbox-2.5.4.38621.tar.gz jetbrains-toolbox
+sudo rm jetbrains-toolbox-2.5.4.38621.tar.gz
 
 ### Non-dev stuff ###
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ACCAF35C
@@ -164,14 +164,12 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C
 sudo sh -c 'echo "deb http://apt.insync.io/ubuntu $(lsb_release -cs) non-free contrib" >> /etc/apt/sources.list.d/insync.list'
 sudo apt update
 sudo apt install insync -y
-sudo apt install deluge -y
 
 sudo add-apt-repository universe
 sudo apt update
 sudo apt install gnome-tweaks gnome-shell-extension-manager gnome-shell-extensions -y
 sudo apt install gir1.2-gtop-2.0 gir1.2-nm-1.0 gir1.2-clutter-1.0 gnome-system-monitor -y
 sudo apt install gnupg2 software-properties-common apt-transport-https lsb-release ca-certificates -y
-sudo apt install safeeyes -y
 
 ### create aliases ###
 echo '### ALIASES ### \nalias kn="kubens \nalias kc="kubectx' >> ~/.zshrc
