@@ -111,7 +111,7 @@ sudo apt install meld \
 sudo snap install code --classic
 
 ### install apps ###
-sudo snap install slack viber-mtd teams-for-linux dbeaver-ce skype
+sudo snap install slack viber-mtd teams-for-linux dbeaver-ce
 sudo apt install vlc smplayer
 
 
