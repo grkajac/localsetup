@@ -97,6 +97,7 @@ sudo apt install meld \
     inxi \
     htop \
     tree \
+    duf \
     wireshark-qt \
     tshark \
     qperf \
