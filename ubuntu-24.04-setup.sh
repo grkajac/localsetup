@@ -109,7 +109,7 @@ sudo apt install meld \
     whois -y
 
 ### install dev apps ###
-sudo snap install code --classic
+sudo snap install code --classic fx
 
 ### install apps ###
 sudo snap install slack viber-mtd teams-for-linux dbeaver-ce
