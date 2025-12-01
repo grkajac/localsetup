@@ -149,7 +149,7 @@ source ~/.zshrc
 pyenv install 3.10.4
 pyenv global 3.10.4
 pip install --upgrade pip
-pip install paramiko ansible wheel powerline-status
+pip install paramiko ansible wheel powerline-status cmd2 colorama argus-recon    
 
 ### install jetbreans toolbox ###
 sudo apt install libfuse2
